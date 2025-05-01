@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #f9f9f9;
+    color: #333;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    gap: 6px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(15px); /* Blur effect */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  }
+  
+  .navbar .logo {
+    font-weight: bold;
+    color: #e53935;
+    font-size: 1.5rem;
+  }
+  
+  .navbar nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fcf6f6;
+    font-weight: 500;
+  }
+  
+  .navbar .login-cart {
+    display: flex;
+    gap: 1rem;
+    color: #f3f1f1;
+    border-radius: 23px;
+    border-color: #f3f1f1;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(15px); /* Blur effect */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+    
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #030303;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.5rem;
+    color: #f5f2f2;
+  }
+  
+  .hero-content p {
+    margin: 1rem 0;
+    color: #fcf3f3;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    background: #e53935;
+    color: rgb(12, 10, 10);
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #c62828;
+  }
+  
+  .hero-image img {
+    max-width: 350px;
+    animation: float 3s ease-in-out infinite;
+    border-radius: 2rem;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+     
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(15px); /* Blur effect */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+    color: #fcf3f3;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    text-align: center;
+
+  }
+  
+  .card img {
+    width: 200px;
+    height: 7cm;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .btn-light {
+    background: white;
+    color: var(--bg);
+    padding: 0.5rem 1.2rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px #0ef;
+  }
+  
+  .btn-light:hover {
+    background: #eee;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #161515;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .features div {
+    text-align: center;
+  }
+  
+  .features span {
+    font-size: 2rem;
+  
+    color: #e53935;
+  }
+  
+  .features p {
+    font-weight: bold;
+    color: #eee;
+
+  }
+  
+  .features small {
+    color: #fff9f9;
+  }
+  .bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
